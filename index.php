@@ -15,6 +15,7 @@ session_start();
     
   <!-- eigen css bestand -->
   <link rel="stylesheet" href="./css/style.css" role="style">
+  <link rel="icon" type="image/ico" href="img/logo.jpg"/>
   <title>Picnic To Go</title>
   
 </head>
