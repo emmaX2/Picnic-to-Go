@@ -7,10 +7,10 @@
   </div>
   <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
   <li class="nav-item">
-        <a class="nav-link" href="#">Winkelmand</a>
+        <a class="nav-link" href="./index.php?content=winkelmand">Winkelmand</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Gebruiker</a>
+        <a class="nav-link" href="./index.php?content=gebruiker">Gebruiker</a>
       </li>
 </ul>
 </nav>
@@ -39,19 +39,19 @@
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Vlees</a>
+        <a class="nav-link" href="./index.php?content=vlees">Vlees</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Groente</a>
+        <a class="nav-link" href="./index.php?content=groente">Groente</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Vis</a>
+        <a class="nav-link" href="./index.php?content=vis">Vis</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Brood</a>
+        <a class="nav-link" href="./index.php?content=brood">Brood</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Vriezer</a>
+        <a class="nav-link" href="./index.php?content=vriezer">Vriezer</a>
       </li>
     </ul>
     

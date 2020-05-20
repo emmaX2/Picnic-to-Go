@@ -23,10 +23,12 @@ session_start();
 
   <main class="container-fluid">
 
-  <?php include("navBar.php"); ?>
+    <?php include("navbar.php"); ?>
       
      <?php include("navigation.php"); ?>
-    </main>
+
+     <?php include("footer.php"); ?>
+ </main>
 
 
 
