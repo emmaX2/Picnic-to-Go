@@ -1,7 +1,13 @@
+.container-fluid {
+    padding-left: 0 !important;
+}
+
+/*#logo {*/
+/*    float: right;*/
+/*}*/
 #mainNav
 {
-    background-color: orange;
-   
+    background-color: #FF8800;
 }
 
 .footer{

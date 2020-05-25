@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
-  <a class="navbar-brand" href="#">LOGO</a>
+  <a class="navbar-brand" href="#" id="logo">LOGO</a>
     <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
       <button class="btn my-2 my-sm-0" type="submit">Search</button>
