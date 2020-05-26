@@ -39,19 +39,22 @@
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Vlees</a>
+        <a class="nav-link" href="#">Groente</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Groente</a>
+        <a class="nav-link" href="#">Fruit</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="">Brood</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Vlees</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Vis</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Brood</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Vriezer</a>
+        <a class="nav-link" href="#">Diepvries</a>
       </li>
     </ul>
     
