@@ -20,10 +20,15 @@
       
 </ul>
 </nav>
+
 <nav class="navbar navbar-expand-lg navbar-light ">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
 </button>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3d6033a02b99b6aa7ab075f99d540b2f07935940
   <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
     <li class="nav-item dropdown">
@@ -63,4 +68,9 @@
     
   </div>
 
+<<<<<<< HEAD
 </nav>
+=======
+</nav>
+
+>>>>>>> 3d6033a02b99b6aa7ab075f99d540b2f07935940
