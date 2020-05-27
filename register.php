@@ -9,7 +9,7 @@
                 <label for="voornaam">Voornaam</label>
                 <input type="text" class="form-control" name="firstname" placeholder="Voornaam" required />
             </div>
-            <div class="form-group col-md-2">
+            <div class="form-group col-md-1">
                 <label for="tussenvoegsel">Tussenvoegsel</label>
                 <input type="text" class="form-control" name="infix" placeholder="Tussenvoegsel" />
             </div>
@@ -19,27 +19,28 @@
             </div>
         </div>
         <div class="form-row">
-            <div class="form-group col-md-2">
-                <label for="huisnr">Huisnummer(+toevoeging) </label>
-                <input type="text" class="form-control" name="huisnr" placeholder="Huisnummer" required />
-            </div>
-            <div class="form-group col-md-2">
-                <label for="postcode">Postcode</label>
-                <input type="text" class="form-control" name="postcode" placeholder="Postcode" required />
-            </div>
-        </div>
-        <div class="form-row">
-            <div class="form-group col-md-2">
+        <div class="form-group col-md-2">
                 <label for="straat">Straatnaam</label>
                 <input type="text" class="form-control" name="straat" placeholder="straatnaam" required />
             </div>
             <div class="form-group col-md-2">
-                <label for="stad">Stad</label>
-                <input type="text" class="form-control" name="city" placeholder="Stad" required />
+                <label for="huisnr">Huisnummer</label>
+                <input type="text" class="form-control" name="huisnr" placeholder="Huisnummer" required />
+            </div>
+            <div class="form-group col-md-1">
+                <label for="huisnr">toevoeging</label>
+                <input type="text" class="form-control" name="huisnr_toevoeging" placeholder="toevoeging" required />
+            </div>
+            
+        </div>
+        <div class="form-row">
+        <div class="form-group col-md-1">
+                <label for="postcode">Postcode</label>
+                <input type="text" class="form-control" name="postcode" placeholder="Postcode" required />
             </div>
             <div class="form-group col-md-2">
-                <label for="land">Land</label>
-                <input type="text" class="form-control" name="land" placeholder="Land" required />
+                <label for="stad">Stad</label>
+                <input type="text" class="form-control" name="city" placeholder="Stad" required />
             </div>
         </div>
         <div class="form-row">

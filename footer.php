@@ -6,10 +6,10 @@
             </div>
             <hr class="footer-line">
             <div class="row ">
-                <!-- footer-about -->
+                
                 <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 ">
                     <div class="footer-widget ">
-                        <div class="footer-title">Company</div>
+                        <div class="footer-title">bedrijf</div>
                         <ul class="list-unstyled">
                             <li><a href="#">About</a></li>
                             <li><a href="#">Support</a></li>
@@ -18,8 +18,7 @@
                         </ul>
                     </div>
                 </div>
-                <!-- /.footer-about -->
-                <!-- footer-links -->
+                
                 <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 ">
                     <div class="footer-widget ">
                         <div class="footer-title">Quick Links</div>
@@ -30,8 +29,7 @@
                         </ul>
                     </div>
                 </div>
-                <!-- /.footer-links -->
-                <!-- footer-links -->
+            
                 <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 ">
                     <div class="footer-widget ">
                         <div class="footer-title">Social</div>
@@ -43,8 +41,7 @@
                         </ul>
                     </div>
                 </div>
-                <!-- /.footer-links -->
-                <!-- footer-links -->
+                
                 <div class="col-xl-3 col-lg-3 col-md-12 col-sm-6 col-6 ">
                     <div class="footer-widget ">
                         <h3 class="footer-title">Subscribe Newsletter</h3>
@@ -56,8 +53,7 @@
                         </form>
                     </div>
                 </div>
-                <!-- /.footer-links -->
-                <!-- tiny-footer -->
+                
             </div>
         </div>
     </div>
