@@ -1,8 +1,21 @@
+.container-fluid {
+    padding-left: 0 !important;
+}
+
+/*#logo {*/
+/*    float: right;*/
+/*}*/
 #mainNav
 {
-    background-color: orange;
-    border-top-left-radius:30px;
-    border-bottom-left-radius:30px; 
-    border-top-right-radius:30px;
-    border-bottom-right-radius:30px;
+    background-color: #FF8800;
 }
+
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:lightgray;
+    
+}
+

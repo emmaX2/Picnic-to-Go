@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
-  <a class="navbar-brand" href="#">LOGO</a>
+  <a class="navbar-brand" href="#" id="logo">LOGO</a>
     <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
       <button class="btn my-2 my-sm-0" type="submit">Search</button>
@@ -10,7 +10,7 @@
         <a class="nav-link" href="#">Winkelwagen</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Gebruiker</a>
+        <a class="nav-link" href="./index.php?content=gebruiker">Gebruiker</a>
       </li>
 </ul>
 </nav>
@@ -39,6 +39,7 @@
         </div>
       </li>
       <li class="nav-item">
+<<<<<<< HEAD
         <a class="nav-link" href="#">Groente</a>
       </li>
       <li class="nav-item">
@@ -55,6 +56,21 @@
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Diepvries</a>
+=======
+        <a class="nav-link" href="./index.php?content=vlees">Vlees</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./index.php?content=groente">Groente</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./index.php?content=vis">Vis</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./index.php?content=brood">Brood</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./index.php?content=vriezer">Vriezer</a>
+>>>>>>> 1d02923ab22e72493e08563f292928d9c6b5642a
       </li>
     </ul>
     
