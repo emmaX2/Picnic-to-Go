@@ -10,16 +10,7 @@
         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn my-2 my-sm-0" type="submit">Search</button>
     </form>
-<<<<<<< HEAD
     </div>
-    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-        <li class="nav-item">
-            <a class="nav-link" href="#">Winkelwagen</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="./index.php?content=gebruiker">Gebruiker</a>
-        </li>
-    </ul>
 </nav>
 <nav class="navbar navbar-expand-lg navbar-light ">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
@@ -65,7 +56,6 @@
         </ul>
 
     </div>
-=======
  
   <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
   <li class="nav-item">
@@ -84,6 +74,7 @@
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
 </button>
+<<<<<<< HEAD
   <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
     <li class="nav-item dropdown">
@@ -123,4 +114,6 @@
     
   </div>
 >>>>>>> 1d31f363fe8f8ff4b52b21f9093c650d5575cf28
+=======
+>>>>>>> 0940ee13005727491bc6caab28a2ffcbbf44b5f5
 </nav>
