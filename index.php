@@ -32,7 +32,9 @@ session_start();
 
         <?php include("navigation.php"); ?>
 
-        <?php include("footer.php"); ?>
+        <?php 
+        // include("footer.php"); 
+        ?>
     </main>
 </div>
 
