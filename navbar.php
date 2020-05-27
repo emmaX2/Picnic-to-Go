@@ -39,6 +39,24 @@
         </div>
       </li>
       <li class="nav-item">
+<<<<<<< HEAD
+        <a class="nav-link" href="#">Groente</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Fruit</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="">Brood</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Vlees</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Vis</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Diepvries</a>
+=======
         <a class="nav-link" href="./index.php?content=vlees">Vlees</a>
       </li>
       <li class="nav-item">
@@ -52,6 +70,7 @@
       </li>
       <li class="nav-item">
         <a class="nav-link" href="./index.php?content=vriezer">Vriezer</a>
+>>>>>>> 1d02923ab22e72493e08563f292928d9c6b5642a
       </li>
     </ul>
     
