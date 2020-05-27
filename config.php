@@ -11,6 +11,6 @@
     }
     catch (PDOException $e)
     {
-        exit('Error Connecting To DataBase');
+        exit('Error Connecting To Database');
     }
 ?>
