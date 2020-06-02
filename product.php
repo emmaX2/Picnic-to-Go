@@ -16,7 +16,8 @@
   
   $sql = "SELECT * FROM product";
   $result = $conn->query($sql);
-
+  
+  
   
     if($result->num_rows > 0){
       while($row = $result->fetch_assoc()){
@@ -24,7 +25,7 @@
         echo "<p> Productnaam: " . $row["productnaam"] . "</p>";
         echo "<p> Productomschrijving: " . $row["productomschrijving"] . "</p>";
         echo "<p> Productprijs: " . $row["productprijs"] . "</p>";
-        echo "<img src='./img/" . $row["productfoto"] . "/1.jpg' class='card-img-top' alt='afbeelding product'>";
+        echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['productfoto'] ).'"/>';
       }
     }
   
