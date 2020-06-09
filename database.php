@@ -6,9 +6,9 @@
             $this->pdo = $pdo;
         }
 
-        function getData()
+        function getDataProduct()
         {
-            $query = $this->pdo->prepare('SELECT * FROM PicnicToGo');
+            $query = $this->pdo->prepare('SELECT * FROM Product');
             $query->execute();
             return $query->fetchAll();
         }
