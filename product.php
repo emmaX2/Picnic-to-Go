@@ -22,15 +22,10 @@
   <div class="card-body">
     <h5 class="card-title">'. $row["productnaam"] . '</h5>
     <p class="card-text">' . $row["productomschrijving"] . '</p>
-    <p class="card-text">€'  . $row["productprijs"] . '</p>
+    <p class="card-text">€'  . $row["productprijs"] . '</p> 
     <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
 </div>';
-        // echo "<div class='row'><div class='col-6'>";
-        // echo "<p> Productnaam: " . $row["productnaam"] . "</p>";
-        // echo "<p> Productomschrijving: " . $row["productomschrijving"] . "</p>";
-        // echo "<p> Productprijs: " . $row["productprijs"] . "</p>";
-        // echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['productfoto'] ).'"/>';
       }
     }
   
