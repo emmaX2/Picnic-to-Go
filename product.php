@@ -3,7 +3,7 @@
    require_once("./config.php");
   
   $sql = "SELECT * FROM product";
-  $result = $conn->query($sql);
+  $query = $this->pdo->prepare('SELECT * FROM PicnicToGo');
 
   
     if($result->num_rows > 0){
