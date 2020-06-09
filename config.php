@@ -1,7 +1,7 @@
 <?php
     
     $host = 'localhost'; 
-    $db_name = 'PicnicToGo'; 
+    $db_name = 'picnictogo'; 
     $db_username = 'root'; 
     $db_password = ''; 
 

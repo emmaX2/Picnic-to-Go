@@ -1,13 +1,14 @@
 <?php
 
-   require_once("./connect_db.php");
-  
-  $sql = "SELECT * FROM product";
-  $result = $conn->query($sql);
-  
-  
-  
-    if($result->num_rows > 0){
+   require_once("./config.php");
+   require_once("./database.php");
+
+  $producten = new Database($pdo);
+
+  $producten->getDataProduct();
+
+  var_dump($database);
+    if($database->num_rows > 0){
       while($row = $result->fetch_assoc()){
 
 
