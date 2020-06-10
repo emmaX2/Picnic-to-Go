@@ -8,7 +8,7 @@
   $producten->getDataProduct();
 
   var_dump($database);
-    if($database->num_rows > 0){
+    if($database->num_rows() > 0){
       while($row = $result->fetch_assoc()){
 
 
