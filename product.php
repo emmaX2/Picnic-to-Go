@@ -4,21 +4,21 @@
   $product1 = new Product(1);
   $product2 = new Product(2);
   $product3 = new Product(3);
+  $product4 = new Product(7);
 
 
   ?>
+  <div class="container">
+
   <div class="row">
     
       <?php
         $product1->showProduct();
         $product2->showProduct();
-        $product3->showProduct();
+        $product4->showProduct();
       ?>
   </div>
-
   
-
-
 <?php
   
 
@@ -76,7 +76,7 @@
         <div class="card-body">
           <h5 class="card-title">' . $this->productnaam . '</h5>
           <p class="card-text">' . $this->productomschrijving . '</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <a href="#" class="btn btn-primary">Bestel!</a>
         </div>
     </div>';
 
