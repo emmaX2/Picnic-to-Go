@@ -10,6 +10,23 @@ html, body {
 /*#logo {*/
 /*    float: right;*/
 /*}*/
+
+.carousel .carousel-inner{
+    height: 584px;
+}
+
+.carousel-inner .carousel-item img{
+    min-height: 584px;
+    object-fit:cover
+}
+
+.tp-products {
+    display: inline-flex;
+    flex-direction: row;
+    flex-basis: auto;
+
+
+}
 #mainNav
 {
     background-color: #FF8800;
