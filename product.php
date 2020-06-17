@@ -1,26 +1,12 @@
 <?php
   require_once("./database.php");
 
-  $product1 = new Product(1);
-  $product2 = new Product(2);
-  $product3 = new Product(3);
-  $product4 = new Product(6);
-
-
-  ?>
-  <div class="container">
-
-  <div class="row">
-    
-      <?php
-        $product1->showProduct();
-        $product2->showProduct();
-        $product3->showProduct();
-        $product4->showProduct();
-      ?>
-  </div>
   
-<?php
+
+
+  
+  
+
   
 
   class Product{
