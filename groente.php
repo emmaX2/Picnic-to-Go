@@ -1,37 +1,47 @@
+<?php
+
+require_once "product.php";
+
+
+
+class Groente extends Product{
+
+    private $categorie = 1;
+    private $rijBestaat = false;
+
+
+    public function __construct($productcode){
+        
+      
+      parent:: __construct($productcode);   
+        $this->conn = DB::getConnection('PicnicToGo');
+        $sql = "select * from categorie where categorieid= 1";
+        $stmt = $this->conn->prepare($sql);
+        $stmt->execute(['categorie'=>$this->categorie]);
+        if ($stmt->rowCount() == 1){
+            $this->rijBestaat = true;
+            $row = $stmt->fetch();
+        }
+    }
+}
+
+
+?>
+
+<?php
+
+$groente1 = new Groente(1);
+
+?>
+
 <div class="container">
 
-<div class="row">
-
-<div class="col-3">
-    <div class="card" style="width: 18rem;">
-    <img src="./img/komkommer" class="card-img-top" alt="...">
-    <div class="card-body">
-        <h5 class="card-title">Komkommer</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Bestel</a>
-    </div>
-    </div> 
-    </div>
-    <div class="col-3">
-        <div class="card" style="width: 18rem;">
-        <img src="./img/paprika" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Paprika</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Bestel</a>
-        </div>
-        </div>
-    </div>
-    <div class="col-3"></div>
-    <div class="col-3"></div>
-
-</div>
+  <div class="row">
     
-
-
-</div>
-
-
+      <?php
+       $groente1->showproduct()
+      ?>
+  </div>
 
 
 

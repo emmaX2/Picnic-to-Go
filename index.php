@@ -26,9 +26,9 @@ session_start();
 <div class="row">
     <main class="container-fluid">
 
-        <?php include("navbar.php"); ?>
+        <?php require_once("navbar.php"); ?>
 
-        <?php include("navigation.php"); ?>
+        <?php require_once("navigation.php"); ?>
 
         <?php 
         // include("footer.php"); 
