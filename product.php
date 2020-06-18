@@ -1,39 +1,47 @@
 <?php
   require_once("./database.php");
 
-  
-
-
-  
-  
+ 
 
   
 
   class Product{
+    private $categorieid;
     private $productcode;
     private $productnaam = null;
     private $productomschrijving = null;
     private $productprijs= null;
     private $productfoto= null;
-    private $rijBestaat = false;
     private $conn = null;
     
 
-    public function __construct(string $productcode){
-        $this->productcode = $productcode;
+    public function __construct($categorieid){
+        $this->categorieid = $categorieid;
         $this->conn = DB::getConnection('PicnicToGo');
-        $sql = "select * from product where productcode=:productcode";
+        $sql = "select * from product where categorieid=:categorieid";
         $stmt = $this->conn->prepare($sql);
-        $stmt->execute(['productcode'=>$this->productcode]);
-        if ($stmt->rowCount() == 1){
-            $this->rijBestaat = true;
-            $row = $stmt->fetch();
-            $this->productnaam = $row->productnaam;
-            $this->productomschrijving = $row->productomschrijving;
-            $this->productprijs = $row->productprijs;
-            $this->productfoto = $row->productfoto;
-           
-        };    
+        $stmt->execute(['categorieid'=>$this->categorieid]);
+        $data = $stmt->fetchall(PDO::FETCH_ASSOC);
+        for($i=0;$i<count($data);$i++){
+            echo 
+            '<div class="card col-sm-6-md-4-lg-3-xl-2" style="width: 18rem;">
+            <img class="card-img-top" src="data:image/jpeg;base64,'.base64_encode($data[$i]['productfoto']). '"/>
+            <div class="card-body">
+            <h5 class="card-title">' . $data[$i]['productnaam'] . '</h5>
+            <p class="card-text">' .  $data[$i]['productomschrijving'] . '</p>
+            <a href="#" class="btn btn-primary">Bestel!</a>
+            </div>
+            </div>';
+          
+        };
+        
+    
+        
+
+            
+            
+       
+        
     }
 
     public function getProductcode(){
@@ -54,20 +62,6 @@
 
     public function getProductfoto(){
       return $this->productfoto;
-    }
-
-    public function showProduct(){
-    echo 
-    '<div class="card col-sm-6-md-4-lg-3-xl-2" style="width: 18rem;">
-        <img class="card-img-top" src="data:image/jpeg;base64,'.base64_encode($this->productfoto). '"/>
-        <div class="card-body">
-          <h5 class="card-title">' . $this->productnaam . '</h5>
-          <p class="card-text">' . $this->productomschrijving . '</p>
-          <a href="#" class="btn btn-primary">Bestel!</a>
-        </div>
-    </div>';
-
-
     }
   
   
