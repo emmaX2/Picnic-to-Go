@@ -18,6 +18,10 @@ session_start();
     <!-- eigen css bestand -->
     <link rel="stylesheet" href="./css/style.css" role="style">
     <link rel="icon" type="image/ico" href="img/logo.jpg"/>
+    <!-- google fonts -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Roboto:wght@700&display=swap');
+    </style>
     <title>Picnic To Go</title>
 
 </head>

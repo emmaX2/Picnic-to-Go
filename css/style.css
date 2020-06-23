@@ -3,9 +3,14 @@ html, body {
     overflow-x: hidden;
 }
 
-/* .container-fluid {
-    padding-left: 0 !important;
-} */
+#mainNav
+{
+    background-color: #FF8800;
+}
+
+.container-fluid {
+   display: block;
+}
 
 /*#logo {*/
 /*    float: right;*/
@@ -20,18 +25,35 @@ html, body {
     object-fit:cover
 }
 
-.tp-products {
-    display: inline-flex;
-    flex-direction: row;
-    flex-basis: auto;
-
-
-}
-#mainNav
-{
-    background-color: #FF8800;
+.tp-title {
+    display: inline-block;
+    max-width: 45%;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
 }
 
+.tp-subtitle {
+    display: inline-block;
+    max-width: 45%;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    text-decoration: underline;
+    padding-left: 20px;
+}
+
+#link {
+    color: black;
+}
+
+.tp-title-subtitle {
+    margin-left: 40px;
+    margin-top: 30px;
+}
+
+.card-container {
+    display: flex;
+    margin-left: 90px;
+}
 .footer{
     
     left: 0;
