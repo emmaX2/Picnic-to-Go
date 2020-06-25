@@ -1,9 +1,16 @@
 <?php
+
 require_once "product.php";
 
-class Vlees extends Product{
 
+
+class Groente extends Product{
+
+    private $categorie;
+    private $productcode;
     
+
+
     public function __construct($productcode){
             parent:: __construct($productcode);
     }
@@ -13,14 +20,3 @@ class Vlees extends Product{
 
 
 ?>
-
-
-
-<div class="container">
-
-  <div class="row">
-    
-      <?php
-       $vlees = new Vlees(2);
-      ?>
-  </div>

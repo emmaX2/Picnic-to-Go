@@ -46,7 +46,7 @@
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="./index.php?content=product">Vlees</a>
+        <a class="nav-link" href="./index.php?content=vlees">Vlees</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="./index.php?content=groente">Groente</a>
@@ -58,7 +58,7 @@
         <a class="nav-link" href="./index.php?content=product">Brood</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="./index.php?content=product">Vriezer</a>
+        <a class="nav-link" href="./index.php?content=diepvries">Vriezer</a>
       </li>
     </ul>
     
