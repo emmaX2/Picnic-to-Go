@@ -1,10 +1,12 @@
 <?php
-  require_once("./database.php");\
+  require_once("./database.php");
   
-  print_r( $_POST );
+  
+  
 
   class Product{
     private $categorieid;
+    private $winkelwagen ;
     private $productcode;
     private $productnaam = null;
     private $productomschrijving = null;
@@ -28,35 +30,29 @@
             <div class='name'>".$data[$i]['productnaam']."</div>
             <div class='description'>".$data[$i]['productomschrijving']."</div>
             <div class='price'>€".$data[$i]['productprijs']."</div>
-            <button type='submit' class='buy'>bestel</button>
+            <div>
+            <input type='number' min='1' name='aantal' value='1' />
+            <button  type='submit'  class='buy'>bestel</button>
+            </div>
             </form>
             </div>";
                 };
+                
           
         }
-
-    public function getProductcode(){
-      return $this->productcode;
-    }
-
-    public function getProductnaam(){
-      return $this->productnaam;
-    }
-
-    public function getProductomschrijving(){
-      return $this->productomschrijving;
-    }
-
-    public function getProductprijs(){
-      return $this->productprijs;
-    }
-
-    public function getProductfoto(){
-      return $this->productfoto;
-    }
-  
   
 }
+
+if(!isset($_SESSION['winkelwagen'])){
+  $_SESSION['winkelwagen'] = array();
+}
+if($_POST != null){
+
+  array_push($_SESSION['winkelwagen'],$_POST);
+  unset($_POST);
+  
+}
+
         
       
     

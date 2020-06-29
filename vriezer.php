@@ -21,6 +21,6 @@ class Vriezer extends Product{
   <div class="row">
     
       <?php
-       
+       $vriezer = new Vriezer(4);
       ?>
   </div>
