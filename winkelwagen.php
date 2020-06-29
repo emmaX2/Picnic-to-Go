@@ -7,7 +7,7 @@ if(isset($_SESSION['winkelwagen'])){
     
 }else{
     echo'<div class="alert alert-primary" role="alert">
-    Uw winkelwagen is nog leeg<a href="" class="alert-link">an example link</a>. Give it a click if you like.
+    Uw winkelwagen is nog leeg
   </div>'; exit();
 };
 
@@ -59,7 +59,7 @@ class Winkelwagen{
         echo'<tr>
         <td colspan="5" align="right">
         
-        <a href="index.php?content=home" class="btn btn-primary" role="button">bestel</a>   
+        <a href="index.php?content=checkout" class="btn btn-primary" role="button">bestel</a>   
         </td>
         
         
