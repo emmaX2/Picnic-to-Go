@@ -52,13 +52,13 @@
         <a class="nav-link" href="./index.php?content=groente">Groente</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="./index.php?content=product">Vis</a>
+        <a class="nav-link" href="./index.php?content=vis">Vis</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="./index.php?content=product">Brood</a>
+        <a class="nav-link" href="./index.php?content=brood">Brood</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="./index.php?content=diepvries">Vriezer</a>
+        <a class="nav-link" href="./index.php?content=vriezer">Vriezer</a>
       </li>
     </ul>
     

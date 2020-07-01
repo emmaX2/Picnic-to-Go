@@ -1,5 +1,7 @@
 <?php
-  require_once("./database.php");
+  require_once("./database.php");\
+  
+  print_r( $_POST );
 
   class Product{
     private $categorieid;
@@ -19,16 +21,17 @@
         $stmt->execute(['categorieid'=>$this->categorieid]);
         $data = $stmt->fetchall(PDO::FETCH_ASSOC);
         for($i=0;$i<count($data);$i++){
-            echo 
-            '<div class="card col-sm-6-md-4-lg-3-xl-2" style="width: 18rem;">
-            <img class="card-img-top" src="data:image/jpeg;base64,'.base64_encode($data[$i]['productfoto']). '"/>
-            <div class="card-body">
-            <h5 class="card-title">' . $data[$i]['productnaam'] . '</h5>
-            <p class="card-text">' .  $data[$i]['productomschrijving'] . '</p>
-            <a href="#" class="btn btn-primary">Bestel!</a>
-            </div>
-            </div>';
-        };
+            echo "<div class='product_wrapper col-4'>
+            <form method='post' action=''>
+            <input type='hidden' name='productcode' value=".$data[$i]['productcode']." />
+            <div class='image'><img src='data:image/jpeg;base64,".base64_encode($data[$i]['productfoto']). "'/></div>
+            <div class='name'>".$data[$i]['productnaam']."</div>
+            <div class='description'>".$data[$i]['productomschrijving']."</div>
+            <div class='price'>€".$data[$i]['productprijs']."</div>
+            <button type='submit' class='buy'>bestel</button>
+            </form>
+            </div>";
+                };
           
         }
 
