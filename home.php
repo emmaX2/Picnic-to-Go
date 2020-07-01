@@ -50,33 +50,33 @@
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="img/frikandel.jpg" alt="image">
+                <img class="card-img-top" src="img/tomaat.jpg" alt="image">
                 <div class="card-img-overlay">
-                    <p class="card-text">Krokante frikandellen</p>
+                    <p class="card-text">Gezonde tomaten</p>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="img/hambuger.jpg" alt="image">
+                <img class="card-img-top" src="img/komkommer.jpg" alt="image">
                 <div class="card-img-overlay">
-                    <p class="card-text">Lorum huppelepup</p>
+                    <p class="card-text">Frisse komkommer</p>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="img/hambuger.jpg" alt="image">
+                <img class="card-img-top" src="img/salami.jpg" alt="image">
                 <div class="card-img-overlay">
-                    <p class="card-text">Lorum huppelepup</p>
+                    <p class="card-text">Verse pizza</p>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="img/hambuger.jpg" alt="image">
+                <img class="card-img-top" src="img/krentebollen.jpg" alt="image">
                 <div class="card-img-overlay">
-                    <p class="card-text">Lorum huppelepup</p>
+                    <p class="card-text">Gezond tussendoortje</p>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="img/hambuger.jpg" alt="image">
+                <img class="card-img-top" src="img/bastille.jpg" alt="image">
                 <div class="card-img-overlay">
-                    <p class="card-text">Lorum huppelepup</p>
+                    <p class="card-text">Vers brood</p>
                 </div>
             </div>
         </div>
