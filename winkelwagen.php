@@ -8,8 +8,10 @@ if(isset($_SESSION['winkelwagen'])){
 }else{
     echo'<div class="alert alert-primary" role="alert">
     Uw winkelwagen is nog leeg
-  </div>'; exit();
+  </div>';
 };
+
+
 
 
 class Winkelwagen{
@@ -32,32 +34,42 @@ class Winkelwagen{
           </tr>
         </thead>'; 
         foreach($productcode as $product){
-            $sql = "select * from product where productcode = $product[productcode]";
-            $stmt = $this->conn->prepare($sql);
-            $stmt->execute();
-            $data = $stmt->fetchall(PDO::FETCH_ASSOC);
-
-            for($i=0;$i<count($data);$i++){
-                echo'
+          
+          $sql = "select * from product where productcode = $product[productcode]";
+          $stmt = $this->conn->prepare($sql);
+          $stmt->execute();
+          $data = $stmt->fetchall(PDO::FETCH_ASSOC);
+          for($i=0;$i<count($data);$i++){
+            $prijs = $product["aantal"] *$product["productprijs"];
+            $_SESSION['total_price'] += ($product["aantal"] *$product["productprijs"]);
+            echo'
                 
-                <tbody>
-                
-                <tr>
-                
-                <td><img style=" width: 75px; height: 75px;" src="data:image/jpeg;base64,' .base64_encode($data[$i]['productfoto']). '"/></td>
-                <td>'. $data[$i]["productnaam"] . '</td>
-                <td>'. $product["aantal"] . '</td>
-                <td>€ '. $data[$i]["productprijs"] . '</td>
-                <td>€ '. $product["aantal"] *$data[$i]["productprijs"] . '</td>
-                
-                
-                
-                </tbody>';
+            <tbody>
+            
+            <tr>
+            
+            <td><img style=" width: 75px; height: 75px;" src="data:image/jpeg;base64,' .base64_encode($data[$i]['productfoto']). '"/></td>
+            <td>'. $data[$i]["productnaam"] . '</td>
+            <td>'. $product["aantal"] . '</td>
+            <td>€ '. $data[$i]["productprijs"] . '</td>
+            <td>€ '. $prijs . '</td>
+            
+            
+            
+            </tbody>';
                
-            }
+          }
+          
+          
         }
+        
+      
         echo'<tr>
         <td colspan="5" align="right">
+        
+         <strong>TOTAAL: €'; echo $_SESSION['total_price']; echo' </strong>
+        
+  
         
         <a href="index.php?content=checkout" class="btn btn-primary" role="button">bestel</a>   
         </td>

@@ -26,6 +26,7 @@
             echo "<div class='product_wrapper col-4'>
             <form method='post' action=''>
             <input type='hidden' name='productcode' value=".$data[$i]['productcode']." />
+            <input type='hidden' name='productprijs' value=".$data[$i]['productprijs']." />
             <div class='image'><img src='data:image/jpeg;base64,".base64_encode($data[$i]['productfoto']). "'/></div>
             <div class='name'>".$data[$i]['productnaam']."</div>
             <div class='description'>".$data[$i]['productomschrijving']."</div>
@@ -51,6 +52,10 @@ if($_POST != null){
   array_push($_SESSION['winkelwagen'],$_POST);
   unset($_POST);
   
+}
+
+if (!isset($_SESSION['total_price'])) {
+  $_SESSION['total_price'] = 0;
 }
 
         
