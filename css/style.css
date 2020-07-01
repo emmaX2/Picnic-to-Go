@@ -52,7 +52,13 @@ html, body {
 
 .card-container {
     display: flex;
-    margin-left: 90px;
+    margin-top: 10px;
+    /*margin-left: 90px;*/
+    justify-content: space-between;
+}
+
+.card {
+
 }
 .footer{
     
