@@ -21,6 +21,6 @@ class Brood extends Product{
   <div class="row">
     
       <?php
-       
+        $brood1 = new Brood(4);
       ?>
   </div>

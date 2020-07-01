@@ -1,7 +1,7 @@
 <?php
 require_once "product.php";
 
-class Vis extends Product{
+class Pasta extends Product{
 
     
     public function __construct($categorie){
@@ -21,8 +21,6 @@ class Vis extends Product{
   <div class="row">
     
       <?php
-        $vis1 = new Vis(10);
+        $pasta1 = new Pasta(7);
       ?>
   </div>
-
-  

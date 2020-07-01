@@ -36,8 +36,8 @@
     <div class="col-md-12">
         <div class="top-sellers">
             <div class="tp-title-subtitle">
-                <h4 class="tp-title">top sellers</h4>
-                <p class="tp-subtitle"><a href="#" id="link">see all</a></p>
+                <h4 class="tp-title">Best verkocht</h4>
+                <p class="tp-subtitle"><a href="./index.php?content=groente" id="link">Bekijk alles</a></p>
             </div>
         </div>
     </div>
@@ -46,13 +46,13 @@
             <div class="card" style="width: 18rem;">
                 <img class="card-img-top" src="img/hambuger.jpg" alt="image">
                 <div class="card-img-overlay">
-                    <p class="card-text">Lorum huppelepup</p>
+                    <p class="card-text">Verse runderhambuers</p>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="img/hambuger.jpg" alt="image">
+                <img class="card-img-top" src="img/frikandel.jpg" alt="image">
                 <div class="card-img-overlay">
-                    <p class="card-text">Lorum huppelepup</p>
+                    <p class="card-text">Krokante frikandellen</p>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
